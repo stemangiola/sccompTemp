@@ -1,28 +1,41 @@
-Package: sccompTemp
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Package: sccomp
+Title: Outlier-aware and Count-based Compositional Analysis of Single-cell Data.
+Version: 0.1.0
+Authors@R: c(person("Stefano", "Mangiola", email = "mangiolastefano@gmail.com",
+                  role = c("aut", "cre"))
+                  )
+Description: Outlier-aware and count-based compositional analysis of single-cell data.
+License: GPL-3 
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Biarch: true
 Depends: 
-    R (>= 3.4.0)
+    R (>= 4.0.0),
+    rstan (>= 2.18.1)
 Imports: 
     methods,
     Rcpp (>= 0.12.0),
     RcppParallel (>= 5.0.1),
-    rstan (>= 2.18.1),
-    rstantools (>= 2.1.1)
+    rstantools (>= 2.1.1),
+    SeuratObject,
+    SingleCellExperiment,
+    parallel,
+    dplyr,
+    tidyr,
+    purrr,
+    magrittr,
+    rlang,
+    tibble,
+    boot,
+    lifecycle
+Suggests:
+    BiocStyle,
+    testthat,
+    markdown,
+    ggplot2,
+    knitr
 LinkingTo: 
     BH (>= 1.66.0),
     Rcpp (>= 0.12.0),
@@ -31,3 +44,18 @@ LinkingTo:
     rstan (>= 2.18.1),
     StanHeaders (>= 2.18.0)
 SystemRequirements: GNU make
+VignetteBuilder: 
+    knitr
+RdMacros:
+    lifecycle
+biocViews: 
+    ImmunoOncology, 
+    Normalization, 
+    Sequencing, 
+    RNASeq, 
+    Software, 
+    GeneExpression,
+    Transcriptomics, 
+    SingleCell, 
+    Clustering
+LazyDataCompression: xz
