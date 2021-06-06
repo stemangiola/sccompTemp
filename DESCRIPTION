@@ -1,4 +1,4 @@
-Package: sccomp
+Package: sccompTemp
 Title: Outlier-aware and Count-based Compositional Analysis of Single-cell Data.
 Version: 0.1.0
 Authors@R: c(person("Stefano", "Mangiola", email = "mangiolastefano@gmail.com",
