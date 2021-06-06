@@ -1,11 +1,11 @@
-#' The 'sccompTemp' package.
+#' The 'sccomp' package.
 #'
 #' @description A DESCRIPTION OF THE PACKAGE
 #'
 #' @docType package
-#' @name sccompTemp-package
-#' @aliases sccompTemp
-#' @useDynLib sccompTemp, .registration = TRUE
+#' @name sccomp-package
+#' @aliases sccomp
+#' @useDynLib sccomp, .registration = TRUE
 #' @import methods
 #' @import Rcpp
 #' @importFrom rstan sampling
